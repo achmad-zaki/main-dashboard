@@ -8,6 +8,7 @@ import CardComponent from "@/components/card"
 import TableComponent from "@/components/table";
 import DoughnutChartComponent from "@/components/chart/doughnut";
 import LineChartComponent from "@/components/chart/line";
+import LineChart from "@/components/chart/line";
 
 export const metadata: Metadata = {
     title: 'Home',
@@ -62,7 +63,7 @@ export default function HomePage() {
             />
             <div className="grid grid-cols-1 md:grid-cols-2">
                 <DoughnutChartComponent />
-                {/* <LineChartComponent /> */}
+                <LineChart />
             </div>
         </section>
     )
