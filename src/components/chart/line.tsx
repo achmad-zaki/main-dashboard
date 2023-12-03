@@ -28,11 +28,7 @@ export const options = {
     responsive: true,
     plugins: {
         legend: {
-            position: 'top' as const,
-        },
-        title: {
-            display: true,
-            text: 'Chart.js Line Chart',
+            position: 'bottom' as const,
         },
     },
 };
@@ -61,6 +57,7 @@ export const data = {
 export default function LineChartComponent() {
     return (
         <div className="min-w-0 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
+            <h4 className="mb-4 text-xl font-semibold text-gray-800 dark:text-gray-300">Line Chart</h4>
             <Line options={options} data={data} />
         </div>
     );

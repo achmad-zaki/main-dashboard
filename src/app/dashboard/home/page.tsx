@@ -8,7 +8,7 @@ import CardComponent from "@/components/card"
 import TableComponent from "@/components/table";
 import DoughnutChartComponent from "@/components/chart/doughnut";
 import LineChartComponent from "@/components/chart/line";
-import LineChart from "@/components/chart/line";
+import PieChartComponent from "@/components/chart/pie";
 
 export const metadata: Metadata = {
     title: 'Home',
@@ -61,9 +61,10 @@ export default function HomePage() {
                     }
                 ]}
             />
-            <div className="grid grid-cols-1 md:grid-cols-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <DoughnutChartComponent />
-                <LineChart />
+                <LineChartComponent />
+                <PieChartComponent/>
             </div>
         </section>
     )

@@ -21,7 +21,7 @@ export default function DoughnutChartComponent() {
     };
 
     return (
-        <div className="p-4 bg-white shadow-xs dark:bg-gray-800">
+        <div className="p-4 bg-white shadow-xs dark:bg-gray-800 rounded-lg">
             <h4 className="mb-4 text-xl font-semibold text-gray-800 dark:text-gray-300">Doughnut Chart</h4>
             <Doughnut
                 data={data}
